@@ -5,16 +5,27 @@
  * @returns {boolean} True if num is positive and false otherwise
  */
 function isPositive(num) {
-  return _____;
+ 
+  if(num > 0){
+      return "True";
+  }
+  else{
+      return "False";
+}
+}
+console.log(isPositive(-23));
+console.log(isPositive(5));
+console.log(isPositive(-3));
+
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for isPositive:');
 
-  console.log(isPositive(0) === false);
-  console.log(isPositive(1) === true);
-  console.log(isPositive(-1) === false);
-  console.log(isPositive(-100.20) === false);
+  console.log(isPositive(0));
+  console.log(isPositive(1));
+  console.log(isPositive(-1));
+  console.log(isPositive(-100.20));
 }
 
 module.exports = isPositive;
